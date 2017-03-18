@@ -8,8 +8,10 @@ Location mode Tile
 
 Some application requires any location to work, but if you turn location provider with standard tile, you will enable most battery hungry method (`High accuracy`). However `Battery saving` mode is suitable in most cases. It saves phone battery and still provided location to applications.
 
-Problems
+Problems and limitation
 -----------------------------------
+Application works on Android 7.+. It is version where custom Quick Settings tiles were added.
+
 Standard applications have no ability to set location mode in runtime because of lack of permission to set secure settings. So this application won't work on Android devices without performing workaround.
 
 Workaround
