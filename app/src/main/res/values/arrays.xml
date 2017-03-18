@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="location_modes">
+        <item>@string/location_disable</item>
+        <item>@string/location_device_only</item>
+        <item>@string/location_battery_saving</item>
+        <item>@string/location_high_accuracy</item>
+    </string-array>
+
+</resources>

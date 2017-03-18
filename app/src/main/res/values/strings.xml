@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Location Tile</string>
+    <string name="tile_name">Location Mode</string>
+    <!-- Location modes -->
+    <string name="location_title">Location mode</string>
+    <string name="location_disable">Disabled</string>
+    <string name="location_device_only">Device only</string>
+    <string name="location_battery_saving">Battery saving</string>
+    <string name="location_high_accuracy">High accuracy</string>
+    <string name="location_unknown">Unknown</string>
+    <string name="workaround">No permission! Please look for workaround to make it work</string>
+    <string name="locked">Not available on lock screen</string>
+</resources>
