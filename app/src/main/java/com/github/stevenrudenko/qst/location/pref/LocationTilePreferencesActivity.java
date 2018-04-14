@@ -1,6 +1,8 @@
 package com.github.stevenrudenko.qst.location.pref;
 
 import android.content.SharedPreferences;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.preference.ListPreference;
 import android.preference.Preference;
@@ -11,6 +13,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 
 import com.github.stevenrudenko.qst.location.R;
+import com.github.stevenrudenko.qst.location.utils.AppUtils;
 
 /** Location tile preferences activity. */
 public class LocationTilePreferencesActivity extends AppCompatActivity {
@@ -39,7 +42,8 @@ public class LocationTilePreferencesActivity extends AppCompatActivity {
             keyVersion = getString(R.string.pref_version);
 
             addPreferencesFromResource(R.xml.prefs);
-            getPreferenceManager().findPreference(keyVersion).setSummary("1.0.0-hello");
+            final String version = AppUtils.getVersion(getActivity());
+            getPreferenceManager().findPreference(keyVersion).setSummary(version);
         }
 
         @Override
