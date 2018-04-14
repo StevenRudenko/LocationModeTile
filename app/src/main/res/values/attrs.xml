@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MultiSelectListPreference">
+        <attr name="summary" format="string" />
+        <attr name="minLimit" format="integer" />
+    </declare-styleable>
+</resources>

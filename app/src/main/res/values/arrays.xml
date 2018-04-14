@@ -8,4 +8,26 @@
         <item>@string/location_high_accuracy</item>
     </string-array>
 
+    <string-array name="location_modes_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="action_type">
+        <item>@string/action_type_dialog</item>
+        <item>@string/action_type_toggle</item>
+    </string-array>
+
+    <string-array name="action_type_summary">
+        <item>@string/action_type_dialog_summary</item>
+        <item>@string/action_type_toggle_summary</item>
+    </string-array>
+
+    <string-array name="action_type_values">
+        <item>@string/pref_action_type_dialog</item>
+        <item>@string/pref_action_type_toggle</item>
+    </string-array>
+
 </resources>

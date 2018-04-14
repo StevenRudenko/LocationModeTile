@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="@string/pref_category_main">
+
+        <ListPreference
+            android:defaultValue="@string/default_action_type"
+            android:entries="@array/action_type"
+            android:entryValues="@array/action_type_values"
+            android:key="@string/pref_action_type"
+            android:summary="%s"
+            android:title="@string/action_type_title" />
+
+        <com.github.stevenrudenko.qst.location.pref.MultiSelectListPreference
+            android:defaultValue="@array/location_modes_values"
+            android:entries="@array/location_modes"
+            android:entryValues="@array/location_modes_values"
+            android:key="@string/pref_location_modes"
+            app:summary="%s"
+            app:minLimit="2"
+            android:title="@string/pref_location_modes_title" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_category_about">
+
+        <Preference
+            android:key="@string/pref_version"
+            android:title="@string/pref_version_title"
+            tools:summary="1.0.0-hsd34fb"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

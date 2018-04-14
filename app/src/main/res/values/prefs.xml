@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="pref_action_type" translatable="false">action_type</string>
+    <string name="pref_location_modes" translatable="false">location_modes</string>
+    <string name="pref_version" translatable="false">version</string>
+
+    <string name="pref_action_type_dialog" translatable="false">0</string>
+    <string name="pref_action_type_toggle" translatable="false">1</string>
+
+</resources>
