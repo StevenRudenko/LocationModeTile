@@ -77,6 +77,7 @@ public class MultiSelectListPreference extends android.preference.MultiSelectLis
                 }
             }
             setValues(values);
+            setSummary(getSummary());
         });
     }
 

@@ -29,7 +29,7 @@
         <Preference
             android:key="@string/pref_version"
             android:title="@string/pref_version_title"
-            tools:summary="1.0.0-hsd34fb"/>
+            tools:summary="2.0"/>
 
     </PreferenceCategory>
 
