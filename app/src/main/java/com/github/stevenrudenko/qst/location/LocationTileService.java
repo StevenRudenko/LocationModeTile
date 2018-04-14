@@ -4,7 +4,6 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.ComponentName;
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.drawable.Icon;
 import android.preference.PreferenceManager;
@@ -144,19 +143,22 @@ public class LocationTileService extends TileService {
             icon = R.drawable.ic_location_off;
             label = R.string.location_disable;
         } else {
-            icon = R.drawable.ic_location_on;
             switch (mode) {
                 case Settings.Secure.LOCATION_MODE_SENSORS_ONLY:
                     label = R.string.location_device_only;
+                    icon = R.drawable.ic_device_location;
                     break;
                 case Settings.Secure.LOCATION_MODE_BATTERY_SAVING:
                     label = R.string.location_battery_saving;
+                    icon = R.drawable.ic_battery_location;
                     break;
                 case Settings.Secure.LOCATION_MODE_HIGH_ACCURACY:
                     label = R.string.location_high_accuracy;
+                    icon = R.drawable.ic_gps_location;
                     break;
                 default:
                     label = R.string.location_unknown;
+                    icon = R.drawable.ic_location_on;
             }
         }
 
@@ -167,12 +169,6 @@ public class LocationTileService extends TileService {
         tile.setState(mode == Settings.Secure.LOCATION_MODE_OFF
                 ? Tile.STATE_INACTIVE : Tile.STATE_ACTIVE);
         tile.updateTile();
-
-        Toast.makeText(
-                getApplicationContext(),
-                getString(R.string.location_mode_changed_message, title),
-                Toast.LENGTH_SHORT
-        ).show();
     }
 
     private void setLocationMode(int mode) {
