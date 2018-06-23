@@ -39,7 +39,9 @@
         <receiver android:name=".LocationModeReceiver">
             <intent-filter>
                 <action android:name="android.location.MODE_CHANGED" />
+                <action android:name="android.location.PROVIDERS_CHANGED" />
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </receiver>
 

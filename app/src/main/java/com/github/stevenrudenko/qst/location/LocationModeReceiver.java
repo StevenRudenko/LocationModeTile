@@ -12,6 +12,7 @@ public class LocationModeReceiver extends BroadcastReceiver {
         final String action = intent.getAction();
         switch (action) {
             case Intent.ACTION_BOOT_COMPLETED:
+            case LocationManager.PROVIDERS_CHANGED_ACTION:
             case LocationManager.MODE_CHANGED_ACTION:
                 LocationTileService.start(context);
                 break;
